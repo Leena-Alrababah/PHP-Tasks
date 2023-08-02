@@ -1,9 +1,9 @@
 <h2>calculator</h2>
-<form action="calcproccess.php" method = "GET">
+<form action="calcproccess.php" method="GET">
     <label for="num1">First Number:</label>
     <input type="number" name="num1" required>
     <br> <br>
-    <label for="num2" >Second Number:</label>
+    <label for="num2">Second Number:</label>
     <input type="number" name="num2" required>
     <br> <br>
 
@@ -18,15 +18,15 @@
     <br>
     <input type="radio" id="div" name="op" value="/">
     <label for="div">/</label>
-    <br> 
-    <button type="submit" name = "submit">submit</button>
+    <br>
+    <button type="submit" name="submit">submit</button>
 </form>
 <?php
 session_start();
 if(isset($_SESSION['result']))
 {
 $result = $_SESSION['result'];
-echo $result;
+echo "Result = $result";
 // print_r($_SESSION);
 }
 ?>
