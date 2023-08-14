@@ -4,6 +4,7 @@ $username = "leena";
 $email = "leena@gmail.com";
 $password = "12345Leena@";
 
+
 $_SESSION['username'] = $username;
 $_SESSION['email'] = $email;
 $_SESSION['password'] = $password;
